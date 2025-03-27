@@ -1,0 +1,222 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+:root{
+      --titulo1: 2em;
+      --color-titulo: #0099DD;
+      --color: white;
+      --espaciado: 35px;
+}
+.hamburger{
+      display: none;
+      cursor: pointer;
+
+      position: absolute;
+      top: 20px;
+      right: 50px;
+}
+.hamburger .line{
+      width: 30px;
+      height: 3px;
+      background: #fefefe;
+      margin: 6px 0;
+}
+h1{
+      color: var(--color-titulo);
+      font-size: var(--titulo1);
+}
+h3{
+      color: var(--color-titulo);
+}
+p{
+      color: var(--color);
+      line-height: var(--espaciado);
+}
+ul{
+      color: var(--color);
+      line-height: var(--espaciado);
+}
+a{
+      color: var(--color);
+}
+.grid{
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 100vh;
+      grid-template-areas: 'aside section';
+}
+.aside{
+      grid-area: aside;
+      background-color: #202022;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.section{
+      grid-area: section;
+      padding: 30px;
+      background-color: #3a3a3c;
+}
+.contenerdor-header{
+      width: 80%;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+}
+.contenerdor-header .perfil{
+      width: 40%;
+}
+.contenerdor-header h1{
+      font-size: var(--titulo1);
+      color: var(--color-titulo);
+}
+.menu ul{
+      list-style: none;
+}
+.menu ul li a{
+      display: block;
+      color: var(--color-titulo);
+      font-size: 20px;
+      padding: 10px 25px;
+      border-radius: 50px;
+      transition: 0.2s;
+      margin: 0 5px;
+      text-decoration: none;
+}
+.menu ul li a:hover{
+    color: black;
+    background: #fefefe;
+}
+.menu ul li a.activo{
+    color: black;
+    background: white;
+
+}
+.portada{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+}
+.portada button{
+      width: 200px;
+      border-style: none;
+      padding: 30px;
+      color: white;
+      cursor: pointer;
+
+      background-color: #3a3a3c;
+      border: 3px solid #0099DD;
+}
+.div-portada{
+      height: 300px;
+
+
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+}
+.sobre-mi{
+      overflow-y: scroll;
+}
+.portada h1{
+      font-size: 4em;
+}
+.portada h3{
+      font-size: 2em;
+}
+.titulo{
+      max-width: 80%;
+      padding: 10px;
+      margin: 10px 0px 40px;
+      border-bottom: 2px solid #0099DD;
+}
+.titulo h1{
+      color: #0099DD;
+}
+.misproyectos{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      overflow-y: scroll;
+}
+.contacto{
+      overflow-y: scroll;
+}
+
+.info-proyecto{
+      display: grid;
+      grid-template-columns: 20% auto;
+      grid-template-rows: auto;
+      grid-template-areas: 'imagen descripcion';
+      padding-bottom: 20px;
+      border-bottom: 2px solid #0099DD;
+}
+.imagen{
+      grid-area: imagen;
+}
+.imagen img{
+      width: 100%;
+}
+.descripcion{
+      grid-area: descripcion;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+.descripcion ul{
+      margin-left: 25px;
+}
+.cajas{
+      margin: 30px 0px 10px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 50% 45%;
+      grid-template-rows: 200px 200px;
+      grid-template-areas: 'caja1 caja2'
+                           'caja3 caja4';
+}
+.c{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      background-color: #202022;
+      color: var(--color-titulo);
+}
+svg{
+      color: white;
+}
+.formacion{
+      overflow-y: scroll;
+}
+.experiencias{
+      margin: 70px 0px 10px;
+
+      border-bottom: 3px solid #0099DD;
+}
+.experiencias div{
+      min-height: 350px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+}
+.experiencias button{
+      width: 200px;
+      border-style: none;
+      padding: 30px;
+      color: white;
+      cursor: pointer;
+
+      background-color: #3a3a3c;
+      border: 3px solid #0099DD;
+}
